@@ -11,4 +11,4 @@ print(f"Ratio is G: {ginger_ratio} and C: {cardmom_ratio}")
 
 # membership
 
-print(f"Is ginger in masala spices ? {'Cinnamon' in masala_spices}")
+print(f"Is ginger in masala spices ? {'cinnamon' in masala_spices}")
