@@ -1,5 +1,7 @@
 import arrow
-brerwing_time = arrow.utcnow()
-print(brerwing_time)
-brerwing_time.to("Europe/Rome")
-print(brerwing_time)
+
+brewing_time = arrow.utcnow()
+brewing_time.to("Europe/Rome")
+
+from collections import namedtuple
+chaiProfile = namedtuple("chaiProfile",["Flavor","aroma"])
