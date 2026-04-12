@@ -40,6 +40,7 @@ message_history = [
 ]
 
 user_query = input("👉")
+
 message_history.append({"role":"user","content":user_query})
 
 while True:
@@ -52,7 +53,9 @@ while True:
     )
 
     raw_result = (response.choices[0].message.content)
+
     message_history.append({"role":"assistant","content":raw_result})
+    
     parsed_result = json.loads(raw_result)
 
     if parsed_result.get("step") == "START":
