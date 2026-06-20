@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import json
 
 load_dotenv()
-
 client = Groq()
 
 SYSTEM_PROMPT = """"
@@ -11,15 +10,12 @@ SYSTEM_PROMPT = """"
         You work on START, PLAN and OUTPUT steps.
         You nedd to first PLAN what needs to be done. The PLAN can be multiple steps.
         Once you think enought PLAN has been done, finally you can give an OUTPUT.
-
         Rules:
         - Strictyly follow the givem JSON output format
         - Only run one steo at a time.
         - The sequence of strps is START (where user gives an input), PLAN (That can be multiple times) and finally OUTPUT (which is goint to be displayed to the user).
-
         Output JOSN Format:
         {"step": "START" | "PLAN": | "OUTPUT", "content":"string"}
-
         Example:
         START: Hey, Can you solve 2+3*5/10
         PLAN: {"step":"PLAN":"content":"Seems like user is interested in math problem}
