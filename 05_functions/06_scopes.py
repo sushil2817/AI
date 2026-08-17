@@ -6,8 +6,6 @@ chai_type = "Lemon"
 # serve_chai()
 # print(f"Outside function: {chai_type}")
 
-
-
 def chai_counter():
     chai_order = "lemon"
     def print_order():
@@ -17,4 +15,5 @@ def chai_counter():
     print_order()
 
 chai_counter()
+print("code running")
 
