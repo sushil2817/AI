@@ -11,7 +11,4 @@ def make_chai():
     stie("cup")
     server("chai")
 
-
-
-
 make_chai()
