@@ -10,4 +10,7 @@ def register_user():
     save_to_db()
     print("User registration complete")
 
+def print():
+    print("This is print funciton")
+
 register_user()
