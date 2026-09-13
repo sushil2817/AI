@@ -1,11 +1,9 @@
 def serve_chai():
     chai_type = "Masala"
     print(f"Inside function: {chai_type}")
-
 chai_type = "Lemon"
 # serve_chai()
 # print(f"Outside function: {chai_type}")
-
 def chai_counter():
     chai_order = "lemon"
     def print_order():
@@ -13,7 +11,6 @@ def chai_counter():
         print("Inner: ",chai_order)
     print("Outer: ",chai_order)
     print_order()
-
 chai_counter()
 print("code running")
 
